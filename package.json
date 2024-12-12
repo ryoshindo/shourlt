@@ -1,0 +1,14 @@
+{
+  "name": "shourlt",
+  "scripts": {
+    "start": "vercel dev -l 3100",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.10.0",
+    "hono": "^4.6.13"
+  },
+  "devDependencies": {
+    "vercel": "^32.4.1"
+  }
+}

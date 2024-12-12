@@ -1,1 +1,4 @@
-# shoulrt
+```
+npm install
+npm run start
+```

@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/:slug",
+      "destination": "/api"
+    }
+  ],
+  "regions": ["hnd1"],
+  "buildCommand": ""
+}
