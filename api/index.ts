@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { env } from "hono/adapter";
+import { basicAuth } from "hono/basic-auth";
 import { handle } from "hono/vercel";
 import { createTarget, findTargetBySlug } from "./db";
 
@@ -8,6 +9,8 @@ export const config = {
 };
 
 const app = new Hono();
+
+app.use("/api/*", basicAuth({ username: "user", password: "password" }));
 
 app.post("/api/targets", async (c) => {
   try {
