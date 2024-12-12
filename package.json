@@ -2,7 +2,7 @@
   "name": "shourlt",
   "scripts": {
     "start": "vercel dev -l 3100",
-    "deploy": "vercel"
+    "push": "vercel --prod"
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
